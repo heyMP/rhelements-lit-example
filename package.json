@@ -1,7 +1,7 @@
 {
   "name": "@rhelements/rhelements",
   "scripts": {
-    "start": "spandx",
+    "start": "zwitterion",
     "lerna": "lerna",
     "test": "npm run build && wct --configFile wct.conf.json test/index.html",
     "build": "lerna run build",
@@ -69,7 +69,9 @@
     "whatwg-fetch": "^2.0.3",
     "yo": "^1.8.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "zwitterion": "^0.27.0"
+  },
   "lint-staged": {
     "*.{js,json}": [
       "prettier --write",
